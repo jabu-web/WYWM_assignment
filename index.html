@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,9 +14,15 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="searchBox">
-            <input type="text" class="searchBar" placeholder="Search">
+    <div id=headline>
+        <h1>Pokemon info!</h1>
+        <h4>Search for Pokemon, Items and/or moves for a picture or information</h4>
+        <h5>Beware of spelling and make sure to include hyphens when needed</h5>
+    </div>
+
+    <div id="pokemonCard" class="pokemonCard">
+        <div id="searchBox" class="searchBox">
+            <input type="text" id="searchBar" class="searchBar" placeholder="Example: Pikachu">
             <button class="searchButton"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
                     viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -24,13 +30,47 @@
                     </path>
                 </svg></button>
         </div>
-        <div class="weather">
-            <h2 class="city">weather in </h2>
-            <h1 class="temp">°C</h1>
-            <div class="description">info</div>
+        <div class="pokemon">
+            <img id="pokeImg" src="" class="pokemonName"></img>
 
         </div>
     </div>
+
+    <div id="pokemonCard" class="itemCard">
+        <div id="searchBox" class="searchBox2">
+            <input type="text" id="searchBar" class="searchBar2" placeholder="Example: Potion">
+            <button class="searchButton2"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                    </path>
+                </svg></button>
+        </div>
+        <div class="item" placeholder=>
+            <img id="pokeImg" src="" class="itemName"></img>
+
+        </div>
+    </div>
+
+    <div id="pokemonCard" class="moveCard">
+        <div id="searchBox" class="searchBox3">
+            <input type="text" id="searchBar" class="searchBar3" placeholder="Example: Pound">
+            <button class="searchButton3"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                    </path>
+                </svg></button>
+        </div>
+        <div class="move">
+            <h3 class="accuracy"></h3>
+            <h3 class="pp"></h3>
+            <h3 class="power"></h3>
+        </div>
+
+
+    </div>
+    </1>
 </body>
 
 </html>
