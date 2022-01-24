@@ -13,7 +13,13 @@ let pPicture = {
   },
   //Uses search bar input to fetch pokemon from end point and converts to lower case
   search: function () {
-    this.getPokemon(document.querySelector(".searchBar").value.toLowerCase());
+    this.getPokemon(
+      document
+        .querySelector(".searchBar")
+        .value.split(" ")
+        .join("-")
+        .toLowerCase()
+    );
   },
 };
 //Runs search function when the button is clicked
@@ -38,7 +44,13 @@ let iPicture = {
 
   //Uses search bar input to fetch item from end point and converts to lower case
   search: function () {
-    this.getItem(document.querySelector(".searchBar2").value.toLowerCase());
+    this.getItem(
+      document
+        .querySelector(".searchBar2")
+        .value.split(" ")
+        .join("-")
+        .toLowerCase()
+    );
   },
 };
 
@@ -67,7 +79,13 @@ let move = {
 
   //Uses search bar input to fetch move data from end point and converts to lower case
   search: function () {
-    this.getMove(document.querySelector(".searchBar3").value.toLowerCase());
+    this.getMove(
+      document
+        .querySelector(".searchBar3")
+        .value.split(" ")
+        .join("-")
+        .toLowerCase()
+    );
   },
 };
 
